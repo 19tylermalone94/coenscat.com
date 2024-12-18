@@ -9,7 +9,6 @@
 
 /* Body styling */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     background: url('../images/acer.gif') repeat;
     background-size: auto; /* Ensures the GIF tiles naturally */
     margin: 0;
@@ -37,7 +36,6 @@ header h1 {
 
 header p {
     font-size: 1.3rem;
-    font-style: italic;
     color: #00ffff; /* Cyan text */
     margin: 5px 0;
 }
