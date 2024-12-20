@@ -113,3 +113,31 @@ footer marquee {
     color: #ff69b4; /* Hot pink */
     font-size: 1.5rem;
 }
+
+.day-entry div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between images */
+    justify-content: center; /* Centers the images horizontally */
+}
+
+.day-entry div img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    flex: 1 1 calc(33.33% - 10px); /* Makes images fit nicely in rows of three on larger screens */
+    border: 2px solid #ff00ff; /* Adds a border for styling */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for aesthetics */
+}
+
+@media (max-width: 768px) {
+    .day-entry div img {
+        flex: 1 1 calc(50% - 10px); /* Adjusts to two images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .day-entry div img {
+        flex: 1 1 100%; /* Stacks images on very small screens */
+    }
+}
